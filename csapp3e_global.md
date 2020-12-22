@@ -30,7 +30,7 @@ So, first please refer to the Chapter 3 errors in the [US edition errata](https:
 
 * Page 329: In *Practice Problem 3.49*, the text "let us let s1" should be "let s1".
 
-* Page 335: `[x₁, x₀]` should be `[dx₁, dx₀]`. `[dx₀, dx₀]` should be `[dx₀, dx₀]`.
+* Page 335: `[x₁, x₀]` should be `[dx₁, dx₀]`. `[x₀, x₀]` should be `[dx₀, dx₀]`.
 
 * Page 374: In *Solution to Problem 3.30*, the 3rd bullet should read "... case labels 2 and 6 are ...".
 
