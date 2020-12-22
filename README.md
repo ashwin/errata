@@ -1,7 +1,7 @@
 # Errata
 
 Errata that I discovered in the books I studied.
-Almost of these have been shared with the author(s) and they have included them in their official errata lists.
+Almost all of these have been shared with the author(s) and they have included them in their official errata lists.
 
 ## Computer Systems: A Programmer's Perspective, 3rd Edition (Global Edition)
 
