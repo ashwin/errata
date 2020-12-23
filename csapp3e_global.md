@@ -1,26 +1,28 @@
 # Computer Systems: A Programmer's Perspective, 3rd Edition (Global Edition)
 
 I loved the 2nd edition of this book so much that I picked up the 3rd edition (which uses x86_64 instead of x86) when I was visiting India.
-The authors Bryant and O'Hallaron maintain an [errata list](https://csapp.cs.cmu.edu/3e/errata.html) for the US edition of this book.
+The authors Bryant and O'Hallaron maintain an [**errata list**](https://csapp.cs.cmu.edu/3e/errata.html) for the **North American edition** of this book.
 
-The catch is that this US edition errata list does not cover the errors in the Global edition of this book.
+The catch is that this North American edition errata list does not cover the errors in the Global edition of this book.
 Here is the message from the authors:
 
 > **Note on the Global Edition**: Unfortunately, the publisher arranged for the generation of a different set of practice and homework problems in the global edition.
 The person doing this didn't do a very good job, and so these problems and their solutions have many errors.
 We have not created an errata for this edition.
 
-So, the US publishers hired two people from India to modify the original US textbook's problems in the Global edition.
-This is a typical trick that US textbook publishers use to prevent their US students from being able to use these cheaper Global/International/Indian edition textbooks in US universities.
+So, the publisher hired two people from India to modify the original US textbook's problems in the Global edition.
+This is a typical trick that US textbook publishers use to prevent their US students from being able to use these cheaper Global/International/Indian edition textbooks in US schools and universities.
 In any case, the people hired to change the problem sets have done a botched job, resulting in lots of mistakes.
 
 Since the authors are not collecting those errors, I have listed the ones I discovered below.
 If you find others, please feel free to give a pull request.
 
-## Chapter 3: Machine-Level Representation of Programs
+## For all chapters
 
-* The US edition errors are also present in the Global Edition.
-So, first please refer to the Chapter 3 errors in the [US edition errata](https://csapp.cs.cmu.edu/3e/errata.html) and add **36** to the page numbers to get the Global Edition page numbers where you need to fix them.
+The errors in the North American edition are also present in the Global Edition, just that the listed page numbers are offset by 36.
+So, for all chapters first refer to [North American edition errata](https://csapp.cs.cmu.edu/3e/errata.html) and add **36** to the page numbers there to get the Global Edition page numbers where you need to fix the errors.
+
+## Chapter 3: Machine-Level Representation of Programs
 
 * Page 233: In the assembly code listing of *Practice Problem 3.10*, the line `movq %rdx, %bax` should be `movq %rdx, %rbx`.
 
@@ -43,3 +45,12 @@ And the solution to problem E should be `a: 0, t: 64, Total: 88, Alignment: 8`.
 The solution to problem B is that the total size is 48 bytes.
 
 * Page 384: In *Solution to Problem 3.51*, the instructions for the double->float conversion are `vmovddup %xmm0, %xmm0; vcvtpd2psx %xmm0, %xmm0`.
+
+## Chapter 4: Processor Architecture
+
+* Page 394: In the caption of *Figure 4.3*, the last sentence should read "... as OPq, jXX, rrmovq and cmovXX in Figure 4.2".
+
+* Page 517: In *Solution to Problem 4.1*, in the 3rd bullet the `0x0000010C` should be `0x000000000000010C`.
+
+* Page 518: In *Solution to Problem 4.4*, in the Y86-64 code the `xorq %rax, %rax` should be `irmovq $1, %rax`.
+Also, the comment `# If count <= 0, return 1` should be `# If count == 0, return 1`.
